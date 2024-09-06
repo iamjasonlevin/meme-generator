@@ -85,6 +85,7 @@ details summary:focus-visible {
   overflow-x: hidden; /* Fix for Firefox bug https://bugzilla.mozilla.org/show_bug.cgi?id=33654 */
   scrollbar-width: thin;
   field-sizing: content;
+  cursor: move;
 }
 
 #maxImageDimensionsForm select:disabled {
@@ -457,4 +458,25 @@ emoji-picker {
 
 .text-underline {
   text-decoration: underline;
+}
+
+#layersContainer {
+  border: 1px solid #ddd;
+  padding: 10px;
+  margin-bottom: 15px;
+}
+
+.layer-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+}
+
+.layer-item span {
+  flex-grow: 1;
+  margin-right: 10px;
+}
+
+.layer-item button {
+  margin-left: 5px;
 }
